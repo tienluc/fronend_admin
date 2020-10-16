@@ -1,0 +1,110 @@
+<div>
+  <h4 class="text-muted mb-4">Xe</h4>
+  <router-outlet></router-outlet>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-0 rounded-0">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Danh hãng xe</h5>
+        </div>
+        <div class="card-body">
+        <!--  -->
+          <form enctype="multipart/form-data">
+              <div class="form-row">
+                <!--  -->
+                  <div class="form-group col-md-5">
+                      <div class="form-group">
+                        <input class="form-control rounded-0" placeholder="Search for..." type="text"/>
+                      </div>
+                  </div>
+                  <!--  -->
+                  <div class="form-group col-md-2"></div>
+                  <!--  -->
+                  <div class="form-group col-md-1">
+                      <div class="form-group">
+                        <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " routerLink="/index/brandmanager/brandadd">
+                          <i class="fas fa-plus"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      
+        <!--  -->
+          <div class="table-responsive-md">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Tên hãng</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Otto</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " routerLink="/index/brandmanager/brandupdate">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 ">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Jhon</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>David</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
