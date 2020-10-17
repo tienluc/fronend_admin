@@ -1,44 +1,86 @@
-  <!-- <link rel="stylesheet" href="assets/MyLogin/fonts/material-icon/css/materian-iconicl-desig-font.min.css"> -->
-  <link rel="stylesheet" href="assets/MyLogin/css/style.css">
-  <script src="assets/MyLogin/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/MyLogin/js/main.js"></script> 
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-43">
+						Login to continue
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email"  placeholder="Enter email">
+						<span class="focus-input100"></span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass"placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
 
-<section class="sign-in">
-  <div class="container">
-      <div class="signin-content">
-          <div class="signin-image">
-              <figure><img src="assets/img/a18.jpeg" alt="sign up image"></figure>
-              <a href="#" routerLink="/register" routerLinkActive="active" class="signup-image-link">Create an account</a>
-          </div>
+					<div class="flex-sb-m w-full p-t-3 p-b-32">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-          <div class="signin-form">
-              <h2 class="form-title">Sign up</h2>
-              <form method="POST" class="register-form" id="login-form">
-                  <div class="form-group">
-                      <label for="your_name"><i class="fas fa-user"></i></label>
-                      <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
-                  </div>
-                  <div class="form-group">
-                      <label for="your_pass"><i class="fas fa-lock"></i></label>
-                      <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
-                  </div>
-                  <div class="form-group">
-                      <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                      <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                  </div>
-                  <div class="form-group form-button">
-                      <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                  </div>
-              </form>
-              <div class="social-login">
-                  <span class="social-label">Or login with</span>
-                  <ul class="socials">
-                      <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                      <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                      <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+					
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							or sign up using
+						</span>
+					</div>
+
+					<div class="login100-form-social flex-c-m">
+						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fab fa-google"  aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url('assets/images/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+	
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="../../../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../../assets/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="../../../assets/js/main.js"></script>
