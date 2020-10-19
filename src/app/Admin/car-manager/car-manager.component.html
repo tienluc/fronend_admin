@@ -2,33 +2,79 @@
   <h4 class="text-muted mb-4">Xe</h4>
   <div class="row mb-4">
     <div class="col-md-12">
-      <div class="card border-0 rounded-0">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11"></h5>
+        </div>
+        <div class="card-body">
+          <form enctype="multipart/form-data">
+            <div class="form-row">
+              <!--  -->
+              <div class="form-group col-md-4">
+                <div class="form-group">
+                  <input class="form-control rounded-0" placeholder="Mẫu xe..." type="text" />
+                </div>
+              </div>
+              <!--  -->
+              <div class="form-group col-md-1"></div>
+              <!--  -->
+              <div class="form-group col-md-4">
+                <select class="form-control rounded-0" id="exampleFormControlSelect1">
+                  <option>Audi</option>
+                  <option>Toyota</option>
+                  <option>BMW</option>
+                  <option>Mercedes</option>
+                  <option>Range Rover</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1"></div>
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-0" id="exampleFormControlSelect3">
+                  <option>Đang hoạt động</option>
+                  <option>Còn trống</option>
+                  <option>Bảo trì</option>
+                </select>
+              </div>
+              
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-0" id="exampleFormControlSelect3">
+                  <option>Đang kinh doanh</option>
+                  <option>Ngừng kinh doanh</option>
+                </select>
+              </div>
+              <!--  -->
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4"></div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-lightning rounded-0 mb-2 mr-2"><i class="fas fa-search"></i>Tìm
+                      kiếm</button>
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-outline-lightning rounded-0 mb-2 mr-2"
+                      routerLink="/index/caradd">
+                      <i class="fas fa-plus"></i> Thêm mới
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
         <div class="card-title mb-1 p-3">
           <h5 class="col-md-11">Danh sách xe</h5>
         </div>
         <div class="card-body">
         <!--  -->
-          <form enctype="multipart/form-data">
-              <div class="form-row">
-                <!--  -->
-                  <div class="form-group col-md-5">
-                      <div class="form-group">
-                        <input class="form-control rounded-0" placeholder="Search for..." type="text"/>
-                      </div>
-                  </div>
-                  <!--  -->
-                  <div class="form-group col-md-5"></div>
-                  <!--  -->
-                  <div class="form-group col-md-1">
-                      <div class="form-group">
-                        <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " routerLink="/index/caradd">
-                          <i class="fas fa-plus"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </form>
-      
+          
         <!--  -->
           <div class="table-responsive-md">
             <table class="table table-hover">
@@ -36,6 +82,7 @@
                 <tr>
                   <th scope="col">STT</th>
                   <th scope="col">Hình ảnh</th>
+                  <th scope="col">Hãng xe</th>
                   <th scope="col">Mẫu xe</th>
                   <th scope="col">Trạng thái</th>
                   <th scope="col">Actions</th>
@@ -46,7 +93,8 @@
                   <th scope="row">1</th>
                   <td><img class="img-fluid " alt="Responsive image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3pApOLydVioLiS95ZhbQaDuY6Sv0WRYHJlw&usqp=CAU" 
                     height="70px" width="90px"></td>
-                  <td>Otto</td>
+                    <td>Jacob</td>
+                    <td>Otto</td>
                   <td>
                     <span class="badge badge-primary rounded-0 p-1">Fixed</span>
                   </td>
@@ -58,7 +106,7 @@
                     <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " routerLink="/index/carupdate">
                       <i class="far fa-edit"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr2">
                       <i class="far fa-trash-alt"></i>
                     </a>
                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
@@ -317,6 +365,7 @@
                 <tr>
                   <th scope="row">2</th>
                   <td>Jacob</td>
+                  <td>Jacob</td>
                   <td>@fat</td>
                   <td>
                     <span class="badge badge-warning rounded-0 p-1">In progress</span>
@@ -336,6 +385,7 @@
                 </tr>
                 <tr>
                   <th scope="row">3</th>
+                  <td>Jacob</td>
                   <td>Larry</td>
                   <td>@twitter</td>
                   <td>
@@ -356,6 +406,7 @@
                 </tr>
                 <tr>
                   <th scope="row">4</th>
+                  <td>Jacob</td>
                   <td>Jhon</td>
                   <td>@Instagram</td>
                   <td>
@@ -376,6 +427,7 @@
                 </tr>
                 <tr>
                   <th scope="row">5</th>
+                  <td>Jacob</td>
                   <td>David</td>
                   <td>@Facebook</td>
                   <td>
