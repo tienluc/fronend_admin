@@ -21,14 +21,14 @@
               <div class="form-group col-md-1"></div>
                 <div class="form-group col-md-2">
                   <div class="form-group">
-                    <button type="button" class="btn btn-lightning rounded-0 mb-2 mr-2"><i class="fas fa-search"></i>Tìm
+                    <button type="button" class="btn btn-lightning rounded-0 mb-2 mr-2" id="search-feature"><i class="fas fa-search"></i>Tìm
                       kiếm</button>
                   </div>
                 </div>
                 <div class="form-group col-md-2">
                   <div class="form-group">
                     <button type="button" class="btn btn-outline-lightning rounded-0 mb-2 mr-2"
-                      routerLink="/index/featuremanager/featureadd">
+                      routerLink="/index/featuremanager/featureadd" id="add-feature">
                       <i class="fas fa-plus"></i> Thêm mới
                     </button>
                   </div>
@@ -44,7 +44,7 @@
     <div class="col-md-12">
       <div class="card border-4 rounded-4">
         <div class="card-title mb-1 p-3">
-          <h5 class="col-md-11">Danh tính năng xe</h5>
+          <h5 class="col-md-11">Danh sách tính năng xe</h5>
         </div>
         <div class="card-body">
         <!--  -->
@@ -64,58 +64,10 @@
                   <th scope="row">1</th>
                   <td>Otto</td>
                   <td>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " routerLink="/index/featuremanager/featureupdate">
+                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2 " id="edit-feature" routerLink="/index/featuremanager/featureupdate">
                       <i class="far fa-edit"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0">
-                      <i class="far fa-trash-alt"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
-                      <i class="far fa-edit"></i>
-                    </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 ">
-                      <i class="far fa-trash-alt"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
-                      <i class="far fa-edit"></i>
-                    </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0">
-                      <i class="far fa-trash-alt"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Jhon</td>
-                  <td>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
-                      <i class="far fa-edit"></i>
-                    </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0">
-                      <i class="far fa-trash-alt"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>David</td>
-                  <td>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0 mr-2">
-                      <i class="far fa-edit"></i>
-                    </a>
-                    <a class="btn btn-sm btn-outline-lightning rounded-0">
+                    <a class="btn btn-sm btn-outline-lightning rounded-0" id="del-feature">
                       <i class="far fa-trash-alt"></i>
                     </a>
                   </td>

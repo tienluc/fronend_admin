@@ -35,8 +35,11 @@ import { ModelManagerComponent } from './Admin/model-manager/model-manager.compo
 import { ModelAddComponent } from './Admin/model-add/model-add.component';
 import { ModelUpdateComponent } from './Admin/model-update/model-update.component';
 import { IndexAdminComponent } from './Admin/index-admin/index-admin.component';
+
+//////////////////////////////////////Log-in & Sign-Up/////////////////////////////
 import { LoginAdminComponent } from './Admin/login-admin/login-admin.component';
 import { RegisterAdminComponent } from './Admin/register-admin/register-admin.component';
+
 
 
 

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+//////////////////////////////Admin////////////////////////////////////
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 import { TablesComponent } from './Admin/tables/tables.component';
 import { FormsComponent } from './Admin/forms/forms.component';
@@ -23,15 +25,18 @@ import { ModelManagerComponent } from './Admin/model-manager/model-manager.compo
 import { ModelAddComponent } from './Admin/model-add/model-add.component';
 import { ModelUpdateComponent } from './Admin/model-update/model-update.component';
 import { IndexAdminComponent } from './Admin/index-admin/index-admin.component';
+
+//////////////////////////////////Log-In & Sign-Up////////////////////////////////
 import { LoginAdminComponent } from './Admin/login-admin/login-admin.component';
 import { RegisterAdminComponent } from './Admin/register-admin/register-admin.component';
 
 
 
 
+
 const routes: Routes = [
 
-  {path: 'admin',   redirectTo: 'register', pathMatch: 'full'},
+  {path: 'admin',   redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginAdminComponent},
   {path: 'register', component: RegisterAdminComponent},
   
@@ -52,21 +57,21 @@ const routes: Routes = [
   {path: 'caradd', component: CarAddComponent},
   {path: 'carupdate', component: CarUpdateComponent},
   {path: 'brandmanager', component: BrandManagerComponent, children:[
-    {path: 'brandadd', component: BrandAddComponent},
-    {path: 'brandupdate', component: BrandUpdateComponent},
-  ]},
+        {path: 'brandadd', component: BrandAddComponent},
+        {path: 'brandupdate', component: BrandUpdateComponent},
+      ]},
   {path: 'featuremanager', component: FeatureManagerComponent, children:[
-    {path: 'featureadd', component: FeatureAddComponent},
-    {path: 'featureupdate', component: FeatureUpdateComponent},
-  ]},
+        {path: 'featureadd', component: FeatureAddComponent},
+        {path: 'featureupdate', component: FeatureUpdateComponent},
+      ]},
   {path: 'modelmanager', component: ModelManagerComponent, children:[
-    {path: 'modeladd', component: ModelAddComponent},
-    {path: 'modelupdate', component: ModelUpdateComponent},
+        {path: 'modeladd', component: ModelAddComponent},
+        {path: 'modelupdate', component: ModelUpdateComponent},
+      ]},
   ]},
- 
 
 
-  ]},
+
   
 ];
 
